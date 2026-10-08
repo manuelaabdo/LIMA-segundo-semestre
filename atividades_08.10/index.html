@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<!--A seção head não aparece diretamente na página, seu objetivo é
+armazenar configurações da página e informar ao navegador.-->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Página HTML</title> <!-- O "title" aparece na aba do navegador como título-->
+
+        <!--A sessão "style" define a estilização de todos os elementos da página,
+        como cores e fontes. Desse modo, não é necessário estilizar no meio do código.-->
+        <style>
+        h1{
+            color: white;
+            background-color: deeppink;
+            text-align: center;
+            font-size: 30px;
+        }
+        h1:hover{
+            background-color: white;
+            color: rgb(201, 1, 111);
+        }
+        h2:hover{
+            text-decoration: underline;
+        }
+        p{
+            color:rgb(255, 255, 255);
+            text-align: center;
+            font-size: 16px;
+        }
+        p:hover{
+            text-decoration: underline;
+        }
+        h2{
+            color: rgb(201, 1, 111);
+            text-align: center;
+            font-size: 32px
+        }
+        h1, h2, h3, p{
+            font-family:monospace
+        }
+        body {
+            background-color:rgb(0, 0, 0); 
+        }
+        footer {
+            position:fixed;
+            bottom: 0;
+            left: 0; 
+            width: 100%; 
+            height: 7%; 
+            background-color:rgb(253, 52, 152); 
+            color: white;
+            font-family: monospace
+        }
+        </style>
+    </head>
+
+    <!-- Aqui se inicia a sessão body, que contém basicamente todo o conteúdo da página.-->
+    <body>
+        <h1><center >~~~~~ Olá, seja bem-vindo à minha página ~~~~~</center></h1> <!-- h1: Título 1-->
+        <section>
+            <h2>Quem sou eu?</h2> <!-- h2: Título 2-->
+            <p>Meu nome é Manuela Pires Abdo. Tenho 16 anos e moro em Sumaré, São Paulo. <br> <!-- p: sinaliza um parágrafo-->
+            Sou uma estudante do segundo ano do ensino médio,cursando desenvolvimento de sistemas no SENAI.</center></p>
+        </section>
+        <section>
+            <h2>Meus interesses</h2>
+            <p>★ Ciência (física, astronomia e astrofísica)<br>
+            ★ Artes (pintura, desenho, artesanato, literatura)<br>
+            ★ Cultura nerd (animes, mangás, jogos, cosplay)<br>
+            ★ Música (Rock, pop, vocaloid, kpop e jpop)
+            </p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>★ E-mail: manuabdo10@gmail.com <br>
+            ★ Telefone: +55 (19) 98354-6158
+            </p>
+        </section>
+    </body>
+
+<!-- A sessão footer é o rodapé da página, localizado logo ao final dela.-->
+    <footer>
+        <p><center>~~~~ &copy; 2026, todos os direitos reservados. ~~~~</center></p>
+    </footer>
+</html>
