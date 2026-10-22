@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<!--A seção head não aparece diretamente na página, seu objetivo é
+armazenar configurações da página e informar ao navegador.-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página HTML</title> <!-- O "title" aparece na aba do navegador como título-->
+
+        <!--A sessão "style" define a estilização de todos os elementos da página,
+        como cores e fontes. Desse modo, não é necessário estilizar no meio do código.-->
+        <style>
+        h1{
+            color: white;
+            background-color: rgb(16, 1, 132);
+            text-align: center;
+            font-size: 40px;
+        }
+        h1:hover{
+            background-color: white;
+            color: rgb(16, 1, 132);
+        }
+        h2:hover{
+            text-decoration: underline;
+        }
+        p{
+            color:rgb(255, 255, 255);
+            text-align: center;
+            font-size: 20px;
+        }
+        h2{
+            color: rgb(26, 0, 220);
+            text-align: center;
+            font-size: 45px
+        }
+        h3 {
+            color: rgb(255, 255, 255);
+            background-color: black;
+            font-size: 40px;
+            text-align: center
+        }
+        h4 {
+            background-color: rgb(255, 255, 255);
+        }
+        h1, h2, h3, h4, p, ul, a, table{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        body {
+            background-color:rgb(0, 0, 0); 
+        }
+        footer {
+            bottom: 0;
+            left: 0; 
+            width: 100%; 
+            height: 7%; 
+            background-color:rgb(16, 1, 132); 
+            color: white;
+            font-family: monospace
+        }
+        ul {
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 30%;
+            line-height: 3.5
+        }
+        a {
+            color: rgb(123, 255, 131);
+            text-align: center;
+            font-size: 25px;
+        }
+        table {
+            color: white;
+            text-align:center;
+            font-size: 25px;
+            width: 80%;
+            height: 120px;
+            margin: 0 auto
+        }
+        .futebol {
+            float: left;
+            margin-right: 60px; 
+            margin-left: 40px;
+            display: block; 
+            width: 380px;
+        }
+        .futebol:hover{
+            transform: scale(1.05);
+        }
+        .pc {
+            float: left;
+            margin-right: 20px; 
+            margin-left: 40px;
+            display: block; 
+            width: 300px;
+        }
+        .pc:hover{
+            transform: scale(1.05);
+        }
+        .teclado {
+            float: left;
+            margin-right: 20px; 
+            margin-left: 40px;
+            display: block; 
+            width: 300px;
+        }
+        .teclado:hover{
+            transform: scale(1.05);
+        }
+        .mouse {
+            float: left;
+            margin-right: 20px; 
+            margin-left: 40px;
+            display: block; 
+            width: 300px;
+        }
+        .mouse:hover{
+            transform: scale(1.05);
+        }
+        </style>
+    </head>
+
+    <!-- Aqui se inicia a sessão body, que contém basicamente todo o conteúdo da página.-->
+    <body>
+        <h1>PixelGear eSports Store</h1> <!-- h1: Título 1-->
+        <img class="futebol" src="https://www.projetodraft.com/wp-content/uploads/2019/05/esports_vale.jpg" alt="Imagem de destaque" >
+        <section id="seção_inicial">
+            <h2>A missão da PixelGear</h2> <!-- h2: Título 2-->
+            <p>Nossa missão é impulsionar a performance de cada jogador e tornar os eSports <br> 
+                acessíveis a todos, entregando PCs Gamers de alta precisão, periféricos <br> 
+                de nível profissional e um ecossistema completo focado <br> 
+                em máxima eficiência, inovação e inclusão no cenário competitivo.</p>
+            <h3><strong>Venha fazer parte deste sonho!</strong></h3>
+        </section>
+        <hr>
+        <h2>Nossos produtos</h2>
+        <section id="PCs">
+            <img class="pc" src="https://cdn.dooca.store/559/products/pc-gamer-ryzen-5-5600g-16gb-ddr4-ssd-480gb-500w-80-plusmemoria-salva-2-woz9r_495x495+fill_ffffff+crop_center.png?v=1788882260&webp=0" alt="Imagem do pc">
+            <h3>PCs Gamers</h3>
+                <ul>
+                    <li>PC Entry (eSports 1080p): Ryzen 5 / RTX 4060 / 16GB RAM / SSD 1TB</li>
+                    <li>PC Beast (1440p Ultra): Ryzen 7 7800X3D / RTX 4070 Ti / 32GB DDR5 / SSD 2TB</li>
+                    <li>PC Ultra (4K / Stream): Ryzen 9 / RTX 4090 / 64GB DDR5 / Water Cooler Custom</li>
+                </ul>
+            <h3>Tabela comparativa</h3>
+            <table border="1">
+            <tr>
+                <th>Modelo</th>
+                <th>Processador</th>
+                <th>Placa de vídeo</th>
+                <th>Memória RAM</th>
+                <th>Armazenamento</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <th>Entry</th>
+                <td>Ryzen 5</td>
+                <td>RTX 4060</td>
+                <td>16GB RAM</td>
+                <td>SSD 1TB</td>
+                <td>R$ 4.500</td>
+            </tr>
+            <tr>
+                <th>Beast</th>
+                <td>Ryzen 7</td>
+                <td>RTX 4070 Ti</td>
+                <td>32GB DDR5</td>
+                <td>SSD 2TB</td>
+                <td>R$ 9.500</td>
+            </tr>
+            <tr>
+                <th>Ultra 4K</th>
+                <td>Ryzen 9</td>
+                <td>RTX 4090</td>
+                <td>64GB DDR5</td>
+                <td>NVMe PCIe 2TB</td>
+                <td>R$ 22.000</td>
+            </tr>
+        </table>
+        </section>
+        <hr>
+        <section id="teclados">
+            <img class="teclado" src="https://i.pinimg.com/originals/20/60/e0/2060e0e37fbe59c8b07e51ec6a30679a.jpg" alt="imagem do teclado">
+            <h3>Teclados</h3>
+            <ul>
+                <li>Teclado de Entrada: Redragon Kumara K552 (Mecânico Switch Red, TKL)</li>
+                <li>Teclado Intermediário: HyperX Alloy Origins (Mecânico Switch Red/Aqua, Full-size ou TKL)</li>
+                <li>Teclado Entusiasta: Wooting 60HE (Magnetic Switch, Rapid Trigger)</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="mouses">
+            <img class="mouse" src="https://cdn.dooca.store/1841/products/invader-pro-wireless-preto-1.jpg?v=1724770690&webp=0" alt="imagem do mouse">
+            <h3>Mouses</h3>
+            <ul>
+                <li>Mouse de Entrada: Logitech G203 (Sensor 8k DPI, RGB, com fio)</li>
+                <li>Mouse Intermediário: Razer DeathAdder V2 X (Sem fio, 14k DPI)</li>
+                <li>Mouse Entusiasta: Logitech G Pro X Superlight 2 (Ultraleve 60g, sem fio, eSports)</li>
+            </ul>
+        <hr>
+        <a href="https://web.whatsapp.com"> 🗨️ Nos chame no whatsapp!</a>
+        </section>
+        <footer> <!-- A sessão footer é o rodapé da página, localizado logo ao final dela.-->
+            <p>~~~~ &copy; 2026, todos os direitos reservados. ~~~~</p>
+        </footer>
+    </body>
+</html>
