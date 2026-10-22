@@ -43,7 +43,7 @@ armazenar configurações da página e informar ao navegador.-->
         h4 {
             background-color: rgb(255, 255, 255);
         }
-        h1, h2, h3, h4, p, ul, a, table{
+        h1, h2, h3, h4, p, ul, a, table, fieldset{
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
         }
         body {
@@ -69,6 +69,8 @@ armazenar configurações da página e informar ao navegador.-->
             color: rgb(123, 255, 131);
             text-align: center;
             font-size: 25px;
+            margin: 0 auto;
+            width: 50%;
         }
         table {
             color: white;
@@ -77,6 +79,12 @@ armazenar configurações da página e informar ao navegador.-->
             width: 80%;
             height: 120px;
             margin: 0 auto
+        }
+        fieldset {
+            color: white;
+            margin: 0 auto;
+            width: 50%;
+            text-align: center
         }
         .futebol {
             float: left;
@@ -201,6 +209,49 @@ armazenar configurações da página e informar ao navegador.-->
         <hr>
         <a href="https://web.whatsapp.com"> 🗨️ Nos chame no whatsapp!</a>
         </section>
+        <fieldset>
+        <legend><strong>1. Dados do Cliente</strong></legend>
+            
+            <p>
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </p>
+
+            <p>
+                <label for="whatsapp">WhatsApp:</label><br>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+            </p>
+            <input type="submit" value="Enviar">
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="gpu">Escolha sua placa de vídeo</label>
+            </p>
+            <p>
+                <select name="gpu" id="gpu" required>
+                    <option value=""> Selecione uma GPU</option>
+                    <option value="gtx1060">NVIDIA GTX 1060</option>
+                    <option value="gtx1070">NVIDIA GTX 1070</option>
+                    <option value="gtx1080">NVIDIA GTX 1080</option>
+                </select>
+            </p>
+            <p>
+                <strong>Objetivo da máquina</strong><br>
+                    <input type="radio" name="jogos" id="jogos" value="jogos">
+                    <label for="jogos">Jogos</label>
+                    <br>
+                    <input type="radio" name="streaming" id="streaming" value="streaming">
+                    <label for="streaming">Streaming</label>
+                    <br>
+                    <input type="radio" name="trabalho" id="trabalho" value="trabalho">
+                    <label for="trabalho">Trabalho</label>
+            </p>
+        </fieldset>
         <footer> <!-- A sessão footer é o rodapé da página, localizado logo ao final dela.-->
             <p>~~~~ &copy; 2026, todos os direitos reservados. ~~~~</p>
         </footer>
