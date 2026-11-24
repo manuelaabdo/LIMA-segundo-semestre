@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<!--A seção head não aparece diretamente na página, seu objetivo é
+armazenar configurações da página e informar ao navegador.-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página HTML</title> <!-- O "title" aparece na aba do navegador como título-->
+
+        <!--A sessão "style" define a estilização de todos os elementos da página,
+        como cores e fontes. Desse modo, não é necessário estilizar no meio do código.-->
+        <style>
+        h1{
+            color: white;
+            background-color: rgb(1, 132, 21);
+            text-align: center;
+            font-size: 40px;
+        }
+        h1:hover{
+            background-color: white;
+            color: rgb(1, 132, 21);
+        }
+        h2:hover{
+            text-decoration: underline;
+        }
+        p{
+            color:rgb(255, 255, 255);
+            text-align: center;
+            font-size: 20px;
+        }
+        h2{
+            color: rgb(1, 132, 21);
+            text-align: center;
+            font-size: 45px
+        }
+        h3 {
+            color: rgb(255, 255, 255);
+            background-color: black;
+            font-size: 40px;
+            text-align: center
+        }
+        h4 {
+            background-color: rgb(255, 255, 255);
+        }
+        h1, h2, h3, h4, p, ul, a, table, fieldset{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        body {
+            background-color:rgb(0, 0, 0); 
+        }
+        footer {
+            bottom: 0;
+            left: 0; 
+            width: 100%; 
+            height: 7%; 
+            background-color:rgb(1, 132, 21); 
+            color: white;
+            font-family: monospace
+        }
+        ul {
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            margin-left: 30%;
+            line-height: 3.5
+        }
+        a {
+            color: rgb(1, 132, 21);
+            text-align: center;
+            font-size: 25px;
+            margin: 0 auto;
+            width: 50%;
+        }
+        table {
+            color: white;
+            text-align:center;
+            font-size: 20px;
+            width: 80%;
+            height: 120px;
+            margin: 0 auto
+        }
+        fieldset {
+            color: white;
+            margin: 0 auto;
+            width: 50%;
+            text-align: center
+        }
+        .calcados {
+            float: left;
+            margin-right: 60px; 
+            margin-left: 40px;
+            display: block; 
+            width: 380px;
+        }
+        .calcados:hover{
+            transform: scale(1.05);
+        }
+        .roupa {
+            float: left;
+            margin-right: 20px; 
+            margin-left: 40px;
+            display: block; 
+            width: 330px;
+        }
+        .roupa:hover{
+            transform: scale(1.05);
+        }
+        .acessorios {
+            float: left;
+            margin-right: 20px; 
+            margin-left: 40px;
+            display: block; 
+            width: 300px;
+        }
+        .acessorios:hover{
+            transform: scale(1.05);
+        }
+        .mouse {
+            float: left;
+            margin-right: 20px; 
+            margin-left: 40px;
+            display: block; 
+            width: 300px;
+        }
+        .mouse:hover{
+            transform: scale(1.05);
+        }
+        </style>
+    </head>
+
+    <!-- Aqui se inicia a sessão body, que contém basicamente todo o conteúdo da página.-->
+    <body>
+        <h1>Esporte & CIA - Artigos Esportivos</h1> <!-- h1: Título 1-->
+        </section>
+        <hr>
+        <h2>Nossos produtos</h2>
+        <section id="calcados">
+            <img class="calcados" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf5u8s8lGqC5qhkL00HWk0N4D8pZR3XqEzKf4HjsPOKFxOMc_v0lGfuET9&s=10" alt="Imagem dos calçados">
+            <h3>Calçados</h3>
+                <ul>
+                    <li>Tênis de corrida (amortecimento): Mizuno Wave Prophecy 13 — R$ 999,90 </li>
+                    <li>Tênis de treino e academia: Nike Metcon 9 — R$ 899,90 </li>
+                    <li>Chuteira (campo e society): Nike Mercurial Vapor 15 — R$ 349,90</li>
+                    <li>Tênis para caminhada e trilha: Salomon X Ultra 4 — R$ 399,90 </li>
+                </ul>
+            <h3>Tabela comparativa</h3>
+            <table border="1">
+            <tr>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Categoria/Indicação</th>
+                <th>Diferencial</th>
+                <th>Tipo de Solado</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <th>Wave Prophecy 13</th>
+                <td>Mizuno</td>
+                <td>Corrida (amortecimento)</td>
+                <td>Placa Infinity Wave de ponta a ponta para máxima absorção de impacto</td>
+                <td>Borracha de carbono (asfalto e esteira)</td>
+                <td>R$ 999.90</td>
+            </tr>
+            <tr>
+                <th>Metcon 9</th>
+                <td>Nike</td>
+                <td>Tênis de treino e academia</td>
+                <td>Placa Hyperlift no calcanhar para estabilidade em levantamento de peso</td>
+                <td>Solado reto e rígido (piso de academia / crossfit)</td>
+                <td>R$ 899.90</td>
+            </tr>
+            <tr>
+                <th>Mercurial Vapor 15</th>
+                <td>Nike</td>
+                <td>Chuteira (campo e society)</td>
+                <td>Cabedal leve e texturizado para controle de bola em alta velocidade</td>
+                <td>Travas específicas (gramado natural ou sintético)</td>
+                <td>R$ 349.90</td>
+            </tr>
+            <tr>
+                <th>X Ultra 4</th>
+                <td>Salomon</td>
+                <td>Tênis para caminhada e trilha</td>
+                <td>Chassi ADV-C para proteção lateral do tornozelo sem perder flexibilidade</td>
+                <td>Solado Contagrip com cravos profundos (terra, pedra e lama)</td>
+                <td>R$ 399.90</td>
+            </tr>
+        </table>
+        </section>
+        <hr>
+        <section id="vestuario">
+            <img class="roupa" src="https://images.tcdn.com.br/img/img_prod/1317970/camiseta_regata_activitta_feminina_esportiva_poliamida_preta_21573_1_d182ba03e4e00b77599b69dabf31b314.jpg" alt="imagem das roupas">
+            <h3>Vestuário</h3>
+            <ul>
+                <li>Camiseta dry-fit: Nike Dri-FIT Legend ou Adidas Own The Run — R$ 119,90</li>
+                <li>Camiseta térmica (segunda pele): Lupo Sport ou Under Armour HeatGear — R$ 89,90</li>
+                <li>Calça legging e top de compressão: Live! Icon ou Track & Field Thermodry — R$ 149,90</li>
+                <li>Bermuda e short de treino: Under Armour Tech ou Puma Run Favorite — R$ 99,90</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="acessorios">
+            <img class="acessorios" src="https://m.media-amazon.com/images/I/71L-uDz8C2L._AC_UF894,1000_QL80_.jpg" alt="imagem do mouse">
+            <h3>Equipamentos e Acessórios</h3>
+            <ul>
+                <li>Bola de futebol (campo): Penalty S11 R2 ou Adidas Al Rihla League — R$ 129,90</li>
+                <li>Bola de basquete e vôlei: Spalding TF-250 ou Penalty 8.0 Pro — R$ 159,90</li>
+                <li>Kit halteres e kettlebell: Polimet Emborrachado ou Acte Sports (4kg a 10kg) — R$ 89,90</li>
+                <li>Tapete de yoga e colchonete: Acte Sports TPE ou Muvin NBR — R$ 79,90</li>
+                <li>Raquete (tênis e beach tennis): Wilson Clash 100 ou Drop Shot Conqueror — R$ 899,90</li>
+            </ul>
+        <hr>
+        </section>
+        <fieldset>
+        <legend><strong>Deseja receber notícias? Insira seus dados e entraremos em contato!</strong></legend>
+            
+            <p>
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </p>
+
+            <p>
+                <label for="whatsapp">WhatsApp:</label><br>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+            </p>
+            <input type="submit" value="Enviar">
+        </fieldset>
+        <footer> <!-- A sessão footer é o rodapé da página, localizado logo ao final dela.-->
+            <p>~~~~ &copy; 2026, todos os direitos reservados. ~~~~</p>
+        </footer>
+    </body>
+</html>
